@@ -1,8 +1,3 @@
-// Assignment Code
-
-
-// Create if statement that must be 12 Characters
-
 // Create variables
 var symbols = ["/", ":", "?", "!", "*", "$", "#", "@", "%", "^", "&", "(", ")" ];
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
@@ -11,6 +6,7 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var passwordArray = [];
 var allArray = []
 
+// Create function
 function generatePassword() {
   var passwordLength = prompt("How many characters would you like in your password?")
   if (passwordLength < 8 || passwordLength >= 128) {
@@ -45,7 +41,7 @@ for (var i = 0; i < passwordLength; i++) {
 }
 
 var generateBtn = document.querySelector("#generate");
-// Write password to the #password input. *WAS GIVEN CODE*
+// Write password to the #password input. 
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -53,6 +49,5 @@ function writePassword() {
   passwordText.value = password;
 }
 
-
-// Add event listener to generate button *WAS GIVEN CODE* 
+// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
